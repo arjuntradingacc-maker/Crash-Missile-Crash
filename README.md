@@ -1,10 +1,15 @@
 # Crash Missile Crash
 
-A vertical mobile game in the crowd-multiplication / lane-control / base-destruction genre
-(the "Mob Control-like" genre), built from scratch with an original identity: **Crash Missile
-Crash**. You steer a rolling missile-cannon down a battlefield, firing an ever-growing crowd of
-troops through multiplier gates, past hazards and enemy guards, into an enemy stronghold you
-have to level.
+An **Android** vertical mobile game in the crowd-multiplication / lane-control / base-destruction
+genre (the "Mob Control-like" genre), built from scratch with an original identity: **Crash
+Missile Crash**. You steer a rolling missile-cannon down a battlefield, firing an ever-growing
+crowd of troops through multiplier gates, past hazards and enemy guards, into an enemy
+stronghold you have to level.
+
+Built in Unity/C#, which compiles to a genuine native Android app (IL2CPP → ARM machine code
+inside a standard Android `Activity`, packaged as a real `.apk`/`.aab`) — this is not a
+webview/hybrid wrapper. See [docs/SETUP.md](docs/SETUP.md#android-build-apk--aab) for the full
+Android build walkthrough.
 
 No characters, art, audio, UI, code, or level content from any existing commercial game is
 used anywhere in this project. All game design documents, data, and creative direction in this
