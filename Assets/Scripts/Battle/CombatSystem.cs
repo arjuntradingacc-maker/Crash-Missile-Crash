@@ -1,4 +1,5 @@
 using System;
+using CrashMissileCrash.Champions;
 using CrashMissileCrash.Core;
 using UnityEngine;
 
@@ -55,8 +56,16 @@ namespace CrashMissileCrash.Battle
                 }
             }
 
+            var championUnit = ChampionManager.Instance != null ? ChampionManager.Instance.ActiveChampionUnit : null;
+            if (championUnit != null && championUnit.IsAlive)
+            {
+                _friendlyGrid.Insert(championUnit, championUnit.transform.position);
+            }
+
             TickFriendlySide(deltaTime);
             TickEnemySide(deltaTime);
+
+            if (championUnit != null && championUnit.IsAlive) AcquireAndAttack(championUnit, _enemyGrid, deltaTime);
         }
 
         private void TickFriendlySide(float deltaTime)
@@ -64,18 +73,22 @@ namespace CrashMissileCrash.Battle
             foreach (var f in CrowdManager.Instance.ActiveUnits)
             {
                 if (!f.IsAlive) continue;
+                AcquireAndAttack(f, _enemyGrid, deltaTime);
+            }
+        }
 
-                if (f.CurrentTarget == null || !f.CurrentTarget.IsAlive)
-                {
-                    float acquireRadius = Mathf.Max(3.5f, f.Stats.Range + 1.5f);
-                    f.CurrentTarget = FindNearest(_enemyGrid, f.transform.position, acquireRadius);
-                }
+        private void AcquireAndAttack(BattleUnit unit, SpatialGrid<ICombatTarget> targetGrid, float deltaTime)
+        {
+            if (unit.CurrentTarget == null || !unit.CurrentTarget.IsAlive)
+            {
+                float acquireRadius = Mathf.Max(3.5f, unit.Stats.Range + 1.5f);
+                unit.CurrentTarget = FindNearest(targetGrid, unit.transform.position, acquireRadius);
+            }
 
-                if (f.CurrentTarget != null)
-                {
-                    float dist = Vector3.Distance(f.transform.position, f.CurrentTarget.TargetTransform.position);
-                    if (dist <= f.Stats.Range + 0.25f) f.TryAttack(deltaTime, _rng);
-                }
+            if (unit.CurrentTarget != null)
+            {
+                float dist = Vector3.Distance(unit.transform.position, unit.CurrentTarget.TargetTransform.position);
+                if (dist <= unit.Stats.Range + 0.25f) unit.TryAttack(deltaTime, _rng);
             }
         }
 

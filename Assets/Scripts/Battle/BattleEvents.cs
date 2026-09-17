@@ -54,6 +54,12 @@ namespace CrashMissileCrash.Battle
 
     public readonly struct BattleDefeatEvent : IGameEvent { }
 
+    public readonly struct BossDefeatedEvent : IGameEvent
+    {
+        public readonly string BossId;
+        public BossDefeatedEvent(string bossId) { BossId = bossId; }
+    }
+
     public readonly struct CannonShotFiredEvent : IGameEvent
     {
         public readonly Vector3 Position;

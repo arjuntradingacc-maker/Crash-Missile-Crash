@@ -1,4 +1,5 @@
 using CrashMissileCrash.Cannons;
+using CrashMissileCrash.Champions;
 using CrashMissileCrash.Core;
 using CrashMissileCrash.Data;
 using UnityEngine;
@@ -61,12 +62,19 @@ namespace CrashMissileCrash.Battle
 
             CannonFireController.Instance.BeginBattle(cannonId, cannonLevel);
 
+            if (ChampionManager.Instance != null)
+            {
+                ChampionManager.Instance.SpawnForBattle(BattlefieldBounds.Instance.CannonSpawnPoint + Vector3.forward * 1.5f);
+            }
+
             if (level.isBossLevel && GameDatabase.Instance.Bosses.TryGetValue(level.bossId, out var bossData))
             {
                 float difficultyScale = 1f + (level.difficulty - 1) * 0.12f;
                 Vector3 bossPos = new Vector3(0f, 1f, level.battlefieldLength);
                 _currentBoss = EnemyManager.Instance.SpawnBoss(bossData, bossPos, difficultyScale);
             }
+
+            if (ServiceLocator.TryGet<Progression.MissionManager>(out var missions)) missions.NotifyBattleStarted();
 
             GameManager.Instance.ChangeState(GameState.Battle);
         }
@@ -81,6 +89,7 @@ namespace CrashMissileCrash.Battle
             CombatSystem.Instance.Tick(dt);
             CrowdManager.Instance.Tick(dt);
             EnemyManager.Instance.Tick(dt);
+            ChampionManager.Instance?.Tick(dt);
             _currentBoss?.TickBoss(dt);
 
             _timeRemaining -= dt;
@@ -107,6 +116,7 @@ namespace CrashMissileCrash.Battle
 
             if (_level.isBossLevel && _currentBoss != null && !_currentBoss.IsAlive)
             {
+                EventBus.Publish(new BossDefeatedEvent(_level.bossId));
                 ResolveVictory();
             }
         }
