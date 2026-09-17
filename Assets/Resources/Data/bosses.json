@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "the_colossus",
+      "displayName": "The Colossus",
+      "baseStats": { "health": 1400, "damage": 18, "defense": 6, "attackSpeed": 0.5, "moveSpeed": 0.8, "range": 2.0, "critChance": 0, "critMultiplier": 1 },
+      "visualKey": "boss_colossus",
+      "phases": [
+        { "healthThreshold01": 1.0, "abilityId": "slam", "abilityCooldown": 9, "damageMultiplier": 1.0, "moveSpeedMultiplier": 1.0 },
+        { "healthThreshold01": 0.6, "abilityId": "summon_minions", "abilityCooldown": 14, "damageMultiplier": 1.15, "moveSpeedMultiplier": 1.0 },
+        { "healthThreshold01": 0.25, "abilityId": "enrage_stomp", "abilityCooldown": 6, "damageMultiplier": 1.4, "moveSpeedMultiplier": 1.3 }
+      ],
+      "minionEnemyId": "scrap_grunt",
+      "minionWaveSize": 5,
+      "minionSpawnInterval": 14,
+      "enrageTimeSeconds": 100,
+      "enrageDamageMultiplier": 1.5
+    },
+    {
+      "id": "warlord_krex",
+      "displayName": "Warlord Krex",
+      "baseStats": { "health": 2600, "damage": 26, "defense": 10, "attackSpeed": 0.6, "moveSpeed": 1.0, "range": 2.5, "critChance": 0.05, "critMultiplier": 1.5 },
+      "visualKey": "boss_warlord_krex",
+      "phases": [
+        { "healthThreshold01": 1.0, "abilityId": "cleave", "abilityCooldown": 8, "damageMultiplier": 1.0, "moveSpeedMultiplier": 1.0 },
+        { "healthThreshold01": 0.55, "abilityId": "shield_phase", "abilityCooldown": 16, "damageMultiplier": 1.1, "moveSpeedMultiplier": 1.1 },
+        { "healthThreshold01": 0.2, "abilityId": "berserk", "abilityCooldown": 5, "damageMultiplier": 1.6, "moveSpeedMultiplier": 1.4 }
+      ],
+      "minionEnemyId": "skitter_raider",
+      "minionWaveSize": 6,
+      "minionSpawnInterval": 12,
+      "enrageTimeSeconds": 120,
+      "enrageDamageMultiplier": 1.6
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "items": [
+    { "id": "gate_x2", "operation": 0, "value": 2, "randomMin": 0, "randomMax": 0, "motion": 0, "motionRange": 0, "motionSpeed": 0, "openDuration": 0, "closedDuration": 0, "label": "x2" },
+    { "id": "gate_x3", "operation": 0, "value": 3, "randomMin": 0, "randomMax": 0, "motion": 0, "motionRange": 0, "motionSpeed": 0, "openDuration": 0, "closedDuration": 0, "label": "x3" },
+    { "id": "gate_x4", "operation": 0, "value": 4, "randomMin": 0, "randomMax": 0, "motion": 1, "motionRange": 2.5, "motionSpeed": 1.2, "openDuration": 0, "closedDuration": 0, "label": "x4" },
+    { "id": "gate_x5", "operation": 0, "value": 5, "randomMin": 0, "randomMax": 0, "motion": 1, "motionRange": 3.0, "motionSpeed": 1.4, "openDuration": 0, "closedDuration": 0, "label": "x5" },
+    { "id": "gate_x10", "operation": 0, "value": 10, "randomMin": 0, "randomMax": 0, "motion": 3, "motionRange": 0, "motionSpeed": 0, "openDuration": 1.6, "closedDuration": 2.2, "label": "x10" },
+    { "id": "gate_plus5", "operation": 1, "value": 5, "randomMin": 0, "randomMax": 0, "motion": 0, "motionRange": 0, "motionSpeed": 0, "openDuration": 0, "closedDuration": 0, "label": "+5" },
+    { "id": "gate_plus10", "operation": 1, "value": 10, "randomMin": 0, "randomMax": 0, "motion": 0, "motionRange": 0, "motionSpeed": 0, "openDuration": 0, "closedDuration": 0, "label": "+10" },
+    { "id": "gate_plus25", "operation": 1, "value": 25, "randomMin": 0, "randomMax": 0, "motion": 1, "motionRange": 2.0, "motionSpeed": 1.0, "openDuration": 0, "closedDuration": 0, "label": "+25" },
+    { "id": "gate_plus50", "operation": 1, "value": 50, "randomMin": 0, "randomMax": 0, "motion": 2, "motionRange": 0, "motionSpeed": 90, "openDuration": 0, "closedDuration": 0, "label": "+50" },
+    { "id": "gate_minus5", "operation": 2, "value": 5, "randomMin": 0, "randomMax": 0, "motion": 0, "motionRange": 0, "motionSpeed": 0, "openDuration": 0, "closedDuration": 0, "label": "-5" },
+    { "id": "gate_minus15", "operation": 2, "value": 15, "randomMin": 0, "randomMax": 0, "motion": 1, "motionRange": 2.0, "motionSpeed": 1.5, "openDuration": 0, "closedDuration": 0, "label": "-15" },
+    { "id": "gate_div2", "operation": 3, "value": 2, "randomMin": 0, "randomMax": 0, "motion": 0, "motionRange": 0, "motionSpeed": 0, "openDuration": 0, "closedDuration": 0, "label": "/2" },
+    { "id": "gate_random", "operation": 5, "value": 0, "randomMin": -10, "randomMax": 30, "motion": 3, "motionRange": 0, "motionSpeed": 0, "openDuration": 1.2, "closedDuration": 1.2, "label": "?" }
+  ]
+}

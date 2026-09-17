@@ -1,0 +1,9 @@
+{
+  "levelResourcePaths": [
+    "Data/Levels/tutorial_level",
+    "Data/Levels/world1_level1",
+    "Data/Levels/world1_level2",
+    "Data/Levels/world1_level3",
+    "Data/Levels/world1_boss"
+  ]
+}

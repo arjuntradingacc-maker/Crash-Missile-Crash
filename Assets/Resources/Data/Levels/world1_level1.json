@@ -1,0 +1,30 @@
+{
+  "id": "world1_level1",
+  "worldId": "world_grassland",
+  "levelNumber": 1,
+  "environmentKey": "env_grassland",
+  "startingUnits": 0,
+  "battlefieldLength": 55,
+  "battlefieldWidth": 9,
+  "gates": [
+    { "gateDefId": "gate_x2", "laneX": -0.5, "distanceFromStart": 10, "splitGroupId": "split_a", "oneWay": false },
+    { "gateDefId": "gate_plus5", "laneX": 0.5, "distanceFromStart": 10, "splitGroupId": "split_a", "oneWay": false },
+    { "gateDefId": "gate_x3", "laneX": 0.0, "distanceFromStart": 24, "splitGroupId": "", "oneWay": false },
+    { "gateDefId": "gate_minus5", "laneX": -0.6, "distanceFromStart": 36, "splitGroupId": "", "oneWay": false }
+  ],
+  "obstacles": [
+    { "id": "obs_speedzone_1", "type": 0, "laneX": 0.0, "distanceFromStart": 30, "paramA": 1.6, "paramB": 0, "paramC": 0, "health": 0, "linkedTeleporterId": "", "visualKey": "fx_speed_zone" }
+  ],
+  "enemyWaves": [
+    { "enemyId": "scrap_grunt", "count": 5, "distanceFromStart": 40, "laneX": -0.3, "spawnSpacing": 1.0 },
+    { "enemyId": "rustbow_archer", "count": 2, "distanceFromStart": 44, "laneX": 0.4, "spawnSpacing": 1.5 }
+  ],
+  "isBossLevel": false,
+  "bossId": "",
+  "baseHealth": 350,
+  "baseTowerCount": 2,
+  "baseTowerHealth": 100,
+  "baseTowerDamage": 6,
+  "rewards": { "coins": 250, "gems": 5, "xp": 50, "stars": 3, "guaranteedCardId": "card_slinger", "guaranteedCardCount": 2 },
+  "difficulty": 2
+}

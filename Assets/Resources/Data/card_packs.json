@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "id": "pack_basic", "displayName": "Basic Cache", "cardCount": 3, "commonWeight": 80, "rareWeight": 17, "epicWeight": 2.7, "legendaryWeight": 0.3, "mythicWeight": 0, "coinCost": 300, "gemCost": 0, "openDurationSeconds": 2.0 },
+    { "id": "pack_rare", "displayName": "Rare Cache", "cardCount": 4, "commonWeight": 55, "rareWeight": 35, "epicWeight": 9, "legendaryWeight": 1, "mythicWeight": 0, "coinCost": 1200, "gemCost": 0, "openDurationSeconds": 2.5 },
+    { "id": "pack_epic", "displayName": "Epic Cache", "cardCount": 5, "commonWeight": 30, "rareWeight": 40, "epicWeight": 25, "legendaryWeight": 4.5, "mythicWeight": 0.5, "coinCost": 0, "gemCost": 80, "openDurationSeconds": 3.0 },
+    { "id": "pack_legendary", "displayName": "Legendary Cache", "cardCount": 6, "commonWeight": 10, "rareWeight": 30, "epicWeight": 40, "legendaryWeight": 18, "mythicWeight": 2, "coinCost": 0, "gemCost": 250, "openDurationSeconds": 3.5 },
+    { "id": "pack_mega", "displayName": "Mega Cache", "cardCount": 10, "commonWeight": 5, "rareWeight": 20, "epicWeight": 40, "legendaryWeight": 30, "mythicWeight": 5, "coinCost": 0, "gemCost": 600, "openDurationSeconds": 4.0 }
+  ]
+}

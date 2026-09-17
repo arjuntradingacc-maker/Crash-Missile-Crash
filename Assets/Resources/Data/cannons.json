@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "scrapcannon_mk1",
+      "displayName": "Scrapcannon Mk1",
+      "rarity": 0,
+      "fireRate": 3.5,
+      "projectileType": 0,
+      "spawnUnitId": "recruit",
+      "unitsPerShot": 1,
+      "damageMultiplier": 1.0,
+      "specialEffectId": "muzzle_basic",
+      "visualKey": "cannon_scrapcannon_mk1",
+      "maxLevel": 10,
+      "perLevelFireRateGrowth": 0.12,
+      "perLevelDamageGrowth": 0.08
+    },
+    {
+      "id": "twin_barrel_blaster",
+      "displayName": "Twin Barrel Blaster",
+      "rarity": 1,
+      "fireRate": 4.5,
+      "projectileType": 1,
+      "spawnUnitId": "recruit",
+      "unitsPerShot": 2,
+      "damageMultiplier": 0.9,
+      "specialEffectId": "muzzle_twin",
+      "visualKey": "cannon_twin_barrel",
+      "maxLevel": 10,
+      "perLevelFireRateGrowth": 0.15,
+      "perLevelDamageGrowth": 0.1
+    },
+    {
+      "id": "arc_discharger",
+      "displayName": "Arc Discharger",
+      "rarity": 2,
+      "fireRate": 4.0,
+      "projectileType": 2,
+      "spawnUnitId": "stormcaller",
+      "unitsPerShot": 1,
+      "damageMultiplier": 1.2,
+      "specialEffectId": "muzzle_arc",
+      "visualKey": "cannon_arc_discharger",
+      "maxLevel": 12,
+      "perLevelFireRateGrowth": 0.18,
+      "perLevelDamageGrowth": 0.12
+    },
+    {
+      "id": "meteor_launcher",
+      "displayName": "Meteor Launcher",
+      "rarity": 3,
+      "fireRate": 3.0,
+      "projectileType": 3,
+      "spawnUnitId": "titan_forge",
+      "unitsPerShot": 1,
+      "damageMultiplier": 1.5,
+      "specialEffectId": "muzzle_meteor",
+      "visualKey": "cannon_meteor_launcher",
+      "maxLevel": 15,
+      "perLevelFireRateGrowth": 0.2,
+      "perLevelDamageGrowth": 0.15
+    }
+  ]
+}

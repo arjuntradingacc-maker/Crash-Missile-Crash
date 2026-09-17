@@ -1,0 +1,31 @@
+{
+  "id": "world1_level2",
+  "worldId": "world_grassland",
+  "levelNumber": 2,
+  "environmentKey": "env_grassland",
+  "startingUnits": 0,
+  "battlefieldLength": 60,
+  "battlefieldWidth": 9,
+  "gates": [
+    { "gateDefId": "gate_x3", "laneX": 0.0, "distanceFromStart": 9, "splitGroupId": "", "oneWay": false },
+    { "gateDefId": "gate_x4", "laneX": -0.4, "distanceFromStart": 22, "splitGroupId": "", "oneWay": false },
+    { "gateDefId": "gate_div2", "laneX": 0.4, "distanceFromStart": 22, "splitGroupId": "", "oneWay": false },
+    { "gateDefId": "gate_plus25", "laneX": 0.0, "distanceFromStart": 38, "splitGroupId": "", "oneWay": false }
+  ],
+  "obstacles": [
+    { "id": "obs_launchpad_1", "type": 1, "laneX": 0.5, "distanceFromStart": 16, "paramA": 8, "paramB": 0, "paramC": 0, "health": 0, "linkedTeleporterId": "", "visualKey": "fx_launch_pad" },
+    { "id": "obs_wall_1", "type": 10, "laneX": -0.5, "distanceFromStart": 30, "paramA": 0, "paramB": 3, "paramC": 4, "health": 0, "linkedTeleporterId": "", "visualKey": "fx_moving_wall" }
+  ],
+  "enemyWaves": [
+    { "enemyId": "iron_hulk", "count": 2, "distanceFromStart": 46, "laneX": 0.0, "spawnSpacing": 2.0 },
+    { "enemyId": "skitter_raider", "count": 4, "distanceFromStart": 50, "laneX": -0.4, "spawnSpacing": 0.8 }
+  ],
+  "isBossLevel": false,
+  "bossId": "",
+  "baseHealth": 480,
+  "baseTowerCount": 3,
+  "baseTowerHealth": 120,
+  "baseTowerDamage": 8,
+  "rewards": { "coins": 320, "gems": 6, "xp": 65, "stars": 3, "guaranteedCardId": "card_pyrotech", "guaranteedCardCount": 2 },
+  "difficulty": 3
+}

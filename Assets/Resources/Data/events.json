@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "id": "event_boss_rush_colossus",
+      "displayName": "Colossus Rush",
+      "format": 0,
+      "startTimeUtcIso": "2026-09-20T00:00:00Z",
+      "endTimeUtcIso": "2026-09-27T00:00:00Z",
+      "minPlayerLevel": 5,
+      "specialCurrencyId": "event_token_rush",
+      "difficultyModifier": 1.3,
+      "rewardTiers": [
+        { "scoreThreshold": 500, "coins": 500, "gems": 0, "cardId": "card_recruit", "cardCount": 5 },
+        { "scoreThreshold": 2000, "coins": 1500, "gems": 20, "cardId": "card_ironclad", "cardCount": 3 },
+        { "scoreThreshold": 5000, "coins": 4000, "gems": 60, "cardId": "card_ironclad", "cardCount": 8 }
+      ],
+      "levelIds": ["world1_boss"],
+      "hasLeaderboard": true
+    },
+    {
+      "id": "event_treasure_hunt",
+      "displayName": "Scrapyard Treasure Hunt",
+      "format": 3,
+      "startTimeUtcIso": "2026-10-01T00:00:00Z",
+      "endTimeUtcIso": "2026-10-05T00:00:00Z",
+      "minPlayerLevel": 3,
+      "specialCurrencyId": "event_token_treasure",
+      "difficultyModifier": 1.0,
+      "rewardTiers": [
+        { "scoreThreshold": 300, "coins": 300, "gems": 0, "cardId": "", "cardCount": 0 },
+        { "scoreThreshold": 1200, "coins": 900, "gems": 10, "cardId": "", "cardCount": 0 }
+      ],
+      "levelIds": ["world1_level1", "world1_level2"],
+      "hasLeaderboard": false
+    }
+  ]
+}
