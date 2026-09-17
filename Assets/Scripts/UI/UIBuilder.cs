@@ -1,3 +1,4 @@
+using CrashMissileCrash.Audio;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -73,6 +74,7 @@ namespace CrashMissileCrash.UI
             colors.disabledColor = new Color(0.4f, 0.4f, 0.4f, 0.6f);
             button.colors = colors;
             if (onClick != null) button.onClick.AddListener(onClick);
+            button.onClick.AddListener(PlayClickFeedback);
             go.AddComponent<ButtonPunch>();
 
             if (!string.IsNullOrEmpty(label))
@@ -123,6 +125,12 @@ namespace CrashMissileCrash.UI
             layout.childForceExpandWidth = true;
             layout.childForceExpandHeight = false;
             return layout;
+        }
+
+        private static void PlayClickFeedback()
+        {
+            AudioManager.Instance?.PlayButtonClick();
+            AudioManager.TriggerHaptic();
         }
 
         public static GridLayoutGroup AddGridLayout(GameObject go, Vector2 cellSize, int spacing = 10)

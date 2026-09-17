@@ -15,6 +15,7 @@ namespace CrashMissileCrash.Battle
 
         private float _targetX;
         private bool _dragging;
+        public bool HasEverDragged { get; private set; }
 
         private void Awake()
         {
@@ -55,6 +56,7 @@ namespace CrashMissileCrash.Battle
             screenPos = held ? (Vector2)Input.GetTouch(0).position : Vector2.zero;
 #endif
             _dragging = held;
+            if (held) HasEverDragged = true;
             if (!held || targetCamera == null) return false;
 
             Ray ray = targetCamera.ScreenPointToRay(screenPos);

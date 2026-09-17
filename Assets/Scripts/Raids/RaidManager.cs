@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using CrashMissileCrash.Backend;
+using CrashMissileCrash.Base;
 using CrashMissileCrash.Core;
 using CrashMissileCrash.Data;
 using CrashMissileCrash.Economy;
@@ -52,7 +53,7 @@ namespace CrashMissileCrash.Raids
 
         public async Task<RaidResolvedEvent> AttackAsync(OpponentProfile opponent)
         {
-            var layout = new DefenseLayout { BuildingLevels = new System.Collections.Generic.Dictionary<Base.BuildingType, int>(opponent.BuildingLevels) };
+            var layout = new DefenseLayout { BuildingLevels = new System.Collections.Generic.Dictionary<BuildingType, int>(opponent.BuildingLevels) };
             int defensePower = layout.TotalDefensePower();
             int attackPower = ComputeAttackPower();
 

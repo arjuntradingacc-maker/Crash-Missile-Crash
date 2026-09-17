@@ -22,6 +22,7 @@ namespace CrashMissileCrash.UI.Screens
         private RectTransform _content;
         private CollectionTab _currentTab = CollectionTab.Units;
         private Text _title;
+        private Text _hintText;
 
         protected override void Awake()
         {
@@ -30,6 +31,9 @@ namespace CrashMissileCrash.UI.Screens
 
             _title = UIBuilder.CreateText(root, "Title", "Collection", 44, UIBuilder.TextColor);
             UIBuilder.Anchor((RectTransform)_title.transform, new Vector2(0f, 1f), new Vector2(1f, 1f), new Vector2(0f, -70f), new Vector2(0f, 80f));
+
+            _hintText = UIBuilder.CreateText(root, "Hint", "", 26, UIBuilder.AccentColor);
+            UIBuilder.Anchor((RectTransform)_hintText.transform, new Vector2(0f, 1f), new Vector2(1f, 1f), new Vector2(0f, -115f), new Vector2(-40f, 40f));
 
             var tabRow = new GameObject("Tabs", typeof(RectTransform), typeof(HorizontalLayoutGroup));
             var tabRect = (RectTransform)tabRow.transform;
@@ -68,6 +72,8 @@ namespace CrashMissileCrash.UI.Screens
             UIBuilder.CreateButton(root, "BackButton", "Back", new Vector2(180f, 80f), UIBuilder.PanelColorLight, () => UIManager.Instance.GoBack())
                 .GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, 60f);
         }
+
+        public void SetHint(string hint) => _hintText.text = hint;
 
         public void SelectTab(CollectionTab tab)
         {

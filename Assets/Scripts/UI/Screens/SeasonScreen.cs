@@ -1,3 +1,4 @@
+using CrashMissileCrash.Data;
 using CrashMissileCrash.Progression;
 using UnityEngine;
 using UnityEngine.UI;
@@ -42,7 +43,7 @@ namespace CrashMissileCrash.UI.Screens
             foreach (var tier in season.tiers) BuildTierRow(tier);
         }
 
-        private void BuildTierRow(Data.SeasonTierReward tier)
+        private void BuildTierRow(SeasonTierReward tier)
         {
             var row = UIBuilder.CreatePanel(_content, $"Tier_{tier.tier}", new Vector2(0f, 130f), UIBuilder.PanelColorLight);
             row.gameObject.AddComponent<LayoutElement>().preferredHeight = 130f;

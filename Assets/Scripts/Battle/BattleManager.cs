@@ -2,6 +2,7 @@ using CrashMissileCrash.Cannons;
 using CrashMissileCrash.Champions;
 using CrashMissileCrash.Core;
 using CrashMissileCrash.Data;
+using CrashMissileCrash.Progression;
 using UnityEngine;
 
 namespace CrashMissileCrash.Battle
@@ -74,7 +75,7 @@ namespace CrashMissileCrash.Battle
                 _currentBoss = EnemyManager.Instance.SpawnBoss(bossData, bossPos, difficultyScale);
             }
 
-            if (ServiceLocator.TryGet<Progression.MissionManager>(out var missions)) missions.NotifyBattleStarted();
+            if (ServiceLocator.TryGet<MissionManager>(out var missions)) missions.NotifyBattleStarted();
 
             GameManager.Instance.ChangeState(GameState.Battle);
         }

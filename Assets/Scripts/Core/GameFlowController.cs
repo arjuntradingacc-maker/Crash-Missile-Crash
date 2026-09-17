@@ -1,5 +1,6 @@
 using CrashMissileCrash.Backend;
 using CrashMissileCrash.Battle;
+using CrashMissileCrash.Cards;
 using CrashMissileCrash.Data;
 using CrashMissileCrash.Economy;
 using CrashMissileCrash.Progression;
@@ -101,11 +102,11 @@ namespace CrashMissileCrash.Core
             {
                 progression.AddXp(rewards.xp);
             }
-            if (!string.IsNullOrEmpty(rewards.guaranteedCardId) && ServiceLocator.TryGet<Cards.CardManager>(out var cards))
+            if (!string.IsNullOrEmpty(rewards.guaranteedCardId) && ServiceLocator.TryGet<CardManager>(out var cards))
             {
                 cards.AddCards(rewards.guaranteedCardId, rewards.guaranteedCardCount);
             }
-            if (ServiceLocator.TryGet<Progression.SeasonManager>(out var season))
+            if (ServiceLocator.TryGet<SeasonManager>(out var season))
             {
                 season.AddPoints(Mathf.Max(5, rewards.stars * 5));
             }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using CrashMissileCrash.Core;
 using CrashMissileCrash.Data;
 using CrashMissileCrash.Economy;
+using CrashMissileCrash.Raids;
 using UnityEngine;
 
 namespace CrashMissileCrash.Base
@@ -81,9 +82,9 @@ namespace CrashMissileCrash.Base
         }
 
         /// <summary>Snapshot sent to the backend so other players can raid this base asynchronously.</summary>
-        public Raids.DefenseLayout BuildDefenseSnapshot()
+        public DefenseLayout BuildDefenseSnapshot()
         {
-            var snapshot = new Raids.DefenseLayout { BuildingLevels = new Dictionary<BuildingType, int>(_levels) };
+            var snapshot = new DefenseLayout { BuildingLevels = new Dictionary<BuildingType, int>(_levels) };
             return snapshot;
         }
 

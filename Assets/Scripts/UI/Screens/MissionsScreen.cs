@@ -1,3 +1,4 @@
+using CrashMissileCrash.Data;
 using CrashMissileCrash.Progression;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,12 +27,12 @@ namespace CrashMissileCrash.UI.Screens
         protected override void OnShown()
         {
             for (int i = _content.childCount - 1; i >= 0; i--) Destroy(_content.GetChild(i).gameObject);
-            if (Data.GameDatabase.Instance == null) return;
+            if (GameDatabase.Instance == null) return;
 
-            foreach (var mission in Data.GameDatabase.Instance.Missions.Values) BuildRow(mission);
+            foreach (var mission in GameDatabase.Instance.Missions.Values) BuildRow(mission);
         }
 
-        private void BuildRow(Data.MissionData mission)
+        private void BuildRow(MissionData mission)
         {
             var row = UIBuilder.CreatePanel(_content, $"Mission_{mission.id}", new Vector2(0f, 130f), UIBuilder.PanelColorLight);
             row.gameObject.AddComponent<LayoutElement>().preferredHeight = 130f;
