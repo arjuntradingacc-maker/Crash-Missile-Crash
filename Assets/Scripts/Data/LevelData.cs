@@ -49,6 +49,7 @@ namespace CrashMissileCrash.Data
 
         public RewardConfig rewards = new RewardConfig();
         public int difficulty = 1;         // coarse difficulty tier used for matchmaking/scaling display
+        public float timeLimitSeconds = 90f;
     }
 
     [Serializable]
