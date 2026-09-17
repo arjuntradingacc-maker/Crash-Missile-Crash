@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "id": "recruit",
+      "displayName": "Recruit",
+      "rarity": 0,
+      "baseStats": { "health": 10, "damage": 2, "defense": 0, "attackSpeed": 1.2, "moveSpeed": 3.0, "range": 1.0, "critChance": 0.05, "critMultiplier": 1.5 },
+      "perLevelGrowth": { "health": 2, "damage": 0.4, "defense": 0, "attackSpeed": 0, "moveSpeed": 0, "range": 0, "critChance": 0, "critMultiplier": 0 },
+      "maxLevel": 10,
+      "visualKey": "unit_recruit",
+      "specialAbilityId": "",
+      "unlockCardsRequired": 1
+    },
+    {
+      "id": "shieldbearer",
+      "displayName": "Shieldbearer",
+      "rarity": 0,
+      "baseStats": { "health": 22, "damage": 1.5, "defense": 3, "attackSpeed": 0.9, "moveSpeed": 2.2, "range": 1.0, "critChance": 0.02, "critMultiplier": 1.5 },
+      "perLevelGrowth": { "health": 4, "damage": 0.25, "defense": 0.5, "attackSpeed": 0, "moveSpeed": 0, "range": 0, "critChance": 0, "critMultiplier": 0 },
+      "maxLevel": 10,
+      "visualKey": "unit_shieldbearer",
+      "specialAbilityId": "",
+      "unlockCardsRequired": 1
+    },
+    {
+      "id": "slinger",
+      "displayName": "Slinger",
+      "rarity": 1,
+      "baseStats": { "health": 9, "damage": 3.2, "defense": 0, "attackSpeed": 1.1, "moveSpeed": 3.0, "range": 3.5, "critChance": 0.08, "critMultiplier": 1.6 },
+      "perLevelGrowth": { "health": 1.6, "damage": 0.6, "defense": 0, "attackSpeed": 0, "moveSpeed": 0, "range": 0, "critChance": 0, "critMultiplier": 0 },
+      "maxLevel": 12,
+      "visualKey": "unit_slinger",
+      "specialAbilityId": "ranged_attack",
+      "unlockCardsRequired": 5
+    },
+    {
+      "id": "pyrotech",
+      "displayName": "Pyrotech",
+      "rarity": 1,
+      "baseStats": { "health": 11, "damage": 2.8, "defense": 0, "attackSpeed": 0.8, "moveSpeed": 2.8, "range": 1.6, "critChance": 0.05, "critMultiplier": 1.5 },
+      "perLevelGrowth": { "health": 2, "damage": 0.5, "defense": 0, "attackSpeed": 0, "moveSpeed": 0, "range": 0, "critChance": 0, "critMultiplier": 0 },
+      "maxLevel": 12,
+      "visualKey": "unit_pyrotech",
+      "specialAbilityId": "splash_attack",
+      "unlockCardsRequired": 5
+    },
+    {
+      "id": "stormcaller",
+      "displayName": "Stormcaller",
+      "rarity": 2,
+      "baseStats": { "health": 14, "damage": 4.0, "defense": 1, "attackSpeed": 1.0, "moveSpeed": 2.8, "range": 2.5, "critChance": 0.1, "critMultiplier": 1.7 },
+      "perLevelGrowth": { "health": 2.5, "damage": 0.7, "defense": 0.2, "attackSpeed": 0, "moveSpeed": 0, "range": 0, "critChance": 0, "critMultiplier": 0 },
+      "maxLevel": 15,
+      "visualKey": "unit_stormcaller",
+      "specialAbilityId": "chain_lightning",
+      "unlockCardsRequired": 8
+    },
+    {
+      "id": "juggernaut",
+      "displayName": "Juggernaut",
+      "rarity": 2,
+      "baseStats": { "health": 40, "damage": 5.5, "defense": 5, "attackSpeed": 0.6, "moveSpeed": 1.8, "range": 1.2, "critChance": 0.03, "critMultiplier": 1.5 },
+      "perLevelGrowth": { "health": 7, "damage": 0.9, "defense": 0.8, "attackSpeed": 0, "moveSpeed": 0, "range": 0, "critChance": 0, "critMultiplier": 0 },
+      "maxLevel": 15,
+      "visualKey": "unit_juggernaut",
+      "specialAbilityId": "",
+      "unlockCardsRequired": 8
+    },
+    {
+      "id": "phantom_blade",
+      "displayName": "Phantom Blade",
+      "rarity": 3,
+      "baseStats": { "health": 16, "damage": 6.5, "defense": 0, "attackSpeed": 1.6, "moveSpeed": 3.6, "range": 1.1, "critChance": 0.25, "critMultiplier": 2.0 },
+      "perLevelGrowth": { "health": 3, "damage": 1.1, "defense": 0, "attackSpeed": 0, "moveSpeed": 0, "range": 0, "critChance": 0, "critMultiplier": 0 },
+      "maxLevel": 20,
+      "visualKey": "unit_phantom_blade",
+      "specialAbilityId": "crit_dash",
+      "unlockCardsRequired": 12
+    },
+    {
+      "id": "titan_forge",
+      "displayName": "Titan Forge",
+      "rarity": 3,
+      "baseStats": { "health": 70, "damage": 12.0, "defense": 8, "attackSpeed": 0.45, "moveSpeed": 1.5, "range": 1.6, "critChance": 0.05, "critMultiplier": 1.6 },
+      "perLevelGrowth": { "health": 12, "damage": 2.0, "defense": 1.2, "attackSpeed": 0, "moveSpeed": 0, "range": 0, "critChance": 0, "critMultiplier": 0 },
+      "maxLevel": 20,
+      "visualKey": "unit_titan_forge",
+      "specialAbilityId": "ground_slam",
+      "unlockCardsRequired": 12
+    }
+  ]
+}

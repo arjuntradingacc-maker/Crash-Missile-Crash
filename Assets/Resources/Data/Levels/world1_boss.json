@@ -1,0 +1,26 @@
+{
+  "id": "world1_boss",
+  "worldId": "world_grassland",
+  "levelNumber": 4,
+  "environmentKey": "env_grassland",
+  "startingUnits": 10,
+  "battlefieldLength": 70,
+  "battlefieldWidth": 10,
+  "gates": [
+    { "gateDefId": "gate_x2", "laneX": 0.0, "distanceFromStart": 10, "splitGroupId": "", "oneWay": false },
+    { "gateDefId": "gate_x3", "laneX": 0.0, "distanceFromStart": 24, "splitGroupId": "", "oneWay": false },
+    { "gateDefId": "gate_plus50", "laneX": 0.0, "distanceFromStart": 38, "splitGroupId": "", "oneWay": false }
+  ],
+  "obstacles": [],
+  "enemyWaves": [
+    { "enemyId": "scrap_grunt", "count": 6, "distanceFromStart": 48, "laneX": 0.0, "spawnSpacing": 1.0 }
+  ],
+  "isBossLevel": true,
+  "bossId": "the_colossus",
+  "baseHealth": 1,
+  "baseTowerCount": 0,
+  "baseTowerHealth": 0,
+  "baseTowerDamage": 0,
+  "rewards": { "coins": 1200, "gems": 40, "xp": 300, "stars": 3, "guaranteedCardId": "card_ironclad", "guaranteedCardCount": 6 },
+  "difficulty": 6
+}

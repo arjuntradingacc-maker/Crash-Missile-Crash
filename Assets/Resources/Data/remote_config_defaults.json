@@ -1,0 +1,10 @@
+{
+  "entries": [
+    { "key": "feature_raids_enabled", "value": "true" },
+    { "key": "feature_events_enabled", "value": "true" },
+    { "key": "feature_boss_rush_enabled", "value": "true" },
+    { "key": "reward_ad_coin_multiplier", "value": "2" },
+    { "key": "interstitial_min_seconds", "value": "120" },
+    { "key": "starter_bundle_gem_bonus", "value": "150" }
+  ]
+}

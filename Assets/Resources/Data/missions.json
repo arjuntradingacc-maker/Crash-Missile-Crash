@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "id": "daily_battles_3", "cadence": 0, "metric": 0, "targetValue": 3, "rewardCoins": 200, "rewardGems": 0, "rewardXp": 30, "rewardCardId": "", "rewardCardCount": 0, "descriptionKey": "mission.daily_battles_3" },
+    { "id": "daily_win_5", "cadence": 0, "metric": 1, "targetValue": 5, "rewardCoins": 350, "rewardGems": 5, "rewardXp": 50, "rewardCardId": "", "rewardCardCount": 0, "descriptionKey": "mission.daily_win_5" },
+    { "id": "daily_multiply_500", "cadence": 0, "metric": 2, "targetValue": 500, "rewardCoins": 300, "rewardGems": 0, "rewardXp": 40, "rewardCardId": "card_recruit", "rewardCardCount": 3, "descriptionKey": "mission.daily_multiply_500" },
+    { "id": "weekly_destroy_5_bases", "cadence": 1, "metric": 3, "targetValue": 5, "rewardCoins": 1500, "rewardGems": 20, "rewardXp": 200, "rewardCardId": "", "rewardCardCount": 0, "descriptionKey": "mission.weekly_destroy_5_bases" },
+    { "id": "weekly_upgrade_2_cards", "cadence": 1, "metric": 4, "targetValue": 2, "rewardCoins": 1000, "rewardGems": 15, "rewardXp": 150, "rewardCardId": "", "rewardCardCount": 0, "descriptionKey": "mission.weekly_upgrade_2_cards" },
+    { "id": "achievement_earn_10000_coins", "cadence": 2, "metric": 5, "targetValue": 10000, "rewardCoins": 0, "rewardGems": 50, "rewardXp": 300, "rewardCardId": "", "rewardCardCount": 0, "descriptionKey": "mission.achievement_earn_10000_coins" },
+    { "id": "achievement_defeat_boss", "cadence": 2, "metric": 6, "targetValue": 1, "rewardCoins": 2000, "rewardGems": 40, "rewardXp": 400, "rewardCardId": "card_ironclad", "rewardCardCount": 5, "descriptionKey": "mission.achievement_defeat_boss" },
+    { "id": "milestone_gates_100", "cadence": 3, "metric": 7, "targetValue": 100, "rewardCoins": 800, "rewardGems": 10, "rewardXp": 100, "rewardCardId": "", "rewardCardCount": 0, "descriptionKey": "mission.milestone_gates_100" }
+  ]
+}

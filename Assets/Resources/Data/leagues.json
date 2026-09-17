@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "division": 0, "trophiesToPromote": 200, "trophiesToDemote": 0, "seasonRewardCoins": 500, "seasonRewardGems": 10 },
+    { "division": 1, "trophiesToPromote": 500, "trophiesToDemote": 150, "seasonRewardCoins": 1000, "seasonRewardGems": 25 },
+    { "division": 2, "trophiesToPromote": 1000, "trophiesToDemote": 400, "seasonRewardCoins": 2000, "seasonRewardGems": 50 },
+    { "division": 3, "trophiesToPromote": 1800, "trophiesToDemote": 850, "seasonRewardCoins": 3500, "seasonRewardGems": 90 },
+    { "division": 4, "trophiesToPromote": 2800, "trophiesToDemote": 1600, "seasonRewardCoins": 6000, "seasonRewardGems": 150 },
+    { "division": 5, "trophiesToPromote": 4000, "trophiesToDemote": 2500, "seasonRewardCoins": 10000, "seasonRewardGems": 250 },
+    { "division": 6, "trophiesToPromote": 5500, "trophiesToDemote": 3600, "seasonRewardCoins": 16000, "seasonRewardGems": 400 },
+    { "division": 7, "trophiesToPromote": 999999, "trophiesToDemote": 5000, "seasonRewardCoins": 25000, "seasonRewardGems": 650 }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "season_01_ironfront",
+      "displayName": "Season 1: Ironfront",
+      "themeKey": "theme_ironfront",
+      "startTimeUtcIso": "2026-09-15T00:00:00Z",
+      "endTimeUtcIso": "2026-10-15T00:00:00Z",
+      "premiumPassGemCost": 500,
+      "tiers": [
+        { "tier": 1, "freeCoins": 100, "freeGems": 0, "freeCardId": "card_recruit", "freeCardCount": 2, "premiumCoins": 200, "premiumGems": 5, "premiumCardId": "card_slinger", "premiumCardCount": 2, "premiumCosmeticKey": "", "pointsRequired": 100 },
+        { "tier": 2, "freeCoins": 150, "freeGems": 0, "freeCardId": "card_shieldbearer", "freeCardCount": 2, "premiumCoins": 300, "premiumGems": 5, "premiumCardId": "card_pyrotech", "premiumCardCount": 2, "premiumCosmeticKey": "", "pointsRequired": 100 },
+        { "tier": 3, "freeCoins": 0, "freeGems": 5, "freeCardId": "", "freeCardCount": 0, "premiumCoins": 0, "premiumGems": 15, "premiumCardId": "card_ironclad", "premiumCardCount": 2, "premiumCosmeticKey": "skin_ironclad_ironfront", "pointsRequired": 150 },
+        { "tier": 4, "freeCoins": 300, "freeGems": 0, "freeCardId": "card_stormcaller", "freeCardCount": 1, "premiumCoins": 600, "premiumGems": 10, "premiumCardId": "card_arc_discharger", "premiumCardCount": 2, "premiumCosmeticKey": "", "pointsRequired": 150 },
+        { "tier": 5, "freeCoins": 0, "freeGems": 0, "freeCardId": "", "freeCardCount": 0, "premiumCoins": 0, "premiumGems": 40, "premiumCardId": "card_phantom_blade", "premiumCardCount": 3, "premiumCosmeticKey": "skin_titan_ironfront", "pointsRequired": 200 }
+      ]
+    }
+  ]
+}

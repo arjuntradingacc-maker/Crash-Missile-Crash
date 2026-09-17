@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Merged into Unity's auto-generated Android manifest at build time (Gradle manifest merger).
+  Deliberately declares ONLY permissions/features here rather than a full <application>/
+  <activity> block, so it stays compatible with whichever Activity backend the installed Unity
+  version defaults to (classic UnityPlayerActivity vs. newer GameActivity) without needing an
+  Editor available to verify the exact generated class name.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Raids/leaderboards/IAP validation/remote config all go through IBackendService, which
+         is network-backed even though the shipped implementation is a local offline mock. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- AudioManager.TriggerHaptic() -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Portrait-only 3D game; do not require a gamepad/touchscreen feature that would exclude
+         otherwise-capable devices, but do declare touchscreen as required since there is no
+         non-touch input path. -->
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+
+</manifest>

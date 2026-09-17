@@ -1,0 +1,33 @@
+{
+  "id": "world1_level3",
+  "worldId": "world_grassland",
+  "levelNumber": 3,
+  "environmentKey": "env_grassland",
+  "startingUnits": 0,
+  "battlefieldLength": 65,
+  "battlefieldWidth": 10,
+  "gates": [
+    { "gateDefId": "gate_x2", "laneX": -0.6, "distanceFromStart": 9, "splitGroupId": "split_b", "oneWay": false },
+    { "gateDefId": "gate_x5", "laneX": 0.6, "distanceFromStart": 9, "splitGroupId": "split_b", "oneWay": false },
+    { "gateDefId": "gate_random", "laneX": 0.0, "distanceFromStart": 24, "splitGroupId": "", "oneWay": false },
+    { "gateDefId": "gate_x10", "laneX": 0.0, "distanceFromStart": 40, "splitGroupId": "", "oneWay": false }
+  ],
+  "obstacles": [
+    { "id": "obs_crusher_1", "type": 4, "laneX": 0.0, "distanceFromStart": 33, "paramA": 25, "paramB": 0, "paramC": 2.5, "health": 0, "linkedTeleporterId": "", "visualKey": "fx_crusher" },
+    { "id": "obs_teleport_in", "type": 8, "laneX": -0.7, "distanceFromStart": 18, "paramA": 0, "paramB": 0, "paramC": 0, "health": 0, "linkedTeleporterId": "obs_teleport_out", "visualKey": "fx_teleporter" },
+    { "id": "obs_teleport_out", "type": 8, "laneX": 0.7, "distanceFromStart": 18, "paramA": 0, "paramB": 0, "paramC": 0, "health": 0, "linkedTeleporterId": "obs_teleport_in", "visualKey": "fx_teleporter" }
+  ],
+  "enemyWaves": [
+    { "enemyId": "bulwark_guard", "count": 3, "distanceFromStart": 48, "laneX": 0.0, "spawnSpacing": 1.8 },
+    { "enemyId": "medic_drone", "count": 1, "distanceFromStart": 52, "laneX": 0.3, "spawnSpacing": 1.0 },
+    { "enemyId": "voidling", "count": 3, "distanceFromStart": 55, "laneX": -0.3, "spawnSpacing": 1.4 }
+  ],
+  "isBossLevel": false,
+  "bossId": "",
+  "baseHealth": 600,
+  "baseTowerCount": 3,
+  "baseTowerHealth": 140,
+  "baseTowerDamage": 10,
+  "rewards": { "coins": 400, "gems": 8, "xp": 80, "stars": 3, "guaranteedCardId": "card_stormcaller", "guaranteedCardCount": 2 },
+  "difficulty": 4
+}

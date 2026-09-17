@@ -1,0 +1,14 @@
+{
+  "items": [
+    { "id": "world_grassland", "displayName": "Verdant Fields", "environmentKey": "env_grassland", "order": 1, "musicKey": "music_grassland", "levelCount": 12, "unlockRequirementLevelId": "" },
+    { "id": "world_desert", "displayName": "Sunscorch Dunes", "environmentKey": "env_desert", "order": 2, "musicKey": "music_desert", "levelCount": 12, "unlockRequirementLevelId": "world1_level12" },
+    { "id": "world_snow", "displayName": "Frostpeak Reaches", "environmentKey": "env_snow", "order": 3, "musicKey": "music_snow", "levelCount": 12, "unlockRequirementLevelId": "world2_level12" },
+    { "id": "world_volcano", "displayName": "Emberfall Crater", "environmentKey": "env_volcano", "order": 4, "musicKey": "music_volcano", "levelCount": 12, "unlockRequirementLevelId": "world3_level12" },
+    { "id": "world_ruins", "displayName": "Sunken Ruins", "environmentKey": "env_ruins", "order": 5, "musicKey": "music_ruins", "levelCount": 12, "unlockRequirementLevelId": "world4_level12" },
+    { "id": "world_cybercity", "displayName": "Neon District", "environmentKey": "env_cybercity", "order": 6, "musicKey": "music_cybercity", "levelCount": 12, "unlockRequirementLevelId": "world5_level12" },
+    { "id": "world_alien", "displayName": "Xylos Expanse", "environmentKey": "env_alien", "order": 7, "musicKey": "music_alien", "levelCount": 12, "unlockRequirementLevelId": "world6_level12" },
+    { "id": "world_skyislands", "displayName": "Skybound Isles", "environmentKey": "env_skyislands", "order": 8, "musicKey": "music_skyislands", "levelCount": 12, "unlockRequirementLevelId": "world7_level12" },
+    { "id": "world_underwater", "displayName": "Abyssal Trench", "environmentKey": "env_underwater", "order": 9, "musicKey": "music_underwater", "levelCount": 12, "unlockRequirementLevelId": "world8_level12" },
+    { "id": "world_megacity", "displayName": "Chrome Metropolis", "environmentKey": "env_megacity", "order": 10, "musicKey": "music_megacity", "levelCount": 12, "unlockRequirementLevelId": "world9_level12" }
+  ]
+}
